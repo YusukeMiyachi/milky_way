@@ -19,7 +19,7 @@ jobs:
     - name: Set up Java version
       uses: actions/setup-java@v1
       with:
-        java-version: '11'
+        java-version: '8'
 
     - name: Build with Maven
       run: mvn clean install
@@ -29,5 +29,5 @@ jobs:
       with:
         app-name: 'KimiNozo'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_a5b3a95edda94fabb9bd15361f04db04 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6b52cf4f2960439499e9d736681dbcf7 }}
         package: '${{ github.workspace }}/target/*.jar'
