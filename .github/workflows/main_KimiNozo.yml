@@ -29,5 +29,5 @@ jobs:
       with:
         app-name: 'KimiNozo'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6b52cf4f2960439499e9d736681dbcf7 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_50c2d35a71784b1c80be2f90b3bd1991 }}
         package: '${{ github.workspace }}/target/*.jar'
